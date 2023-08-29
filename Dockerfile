@@ -2,7 +2,7 @@
 FROM php:7.4-apache
 
 # Copia el script PHP al directorio raíz del servidor web en el contenedor
-COPY index.php /var/www/html/
+COPY . /var/www/html/
 
 # Expone el puerto 80 para acceder al servicio
 EXPOSE 80

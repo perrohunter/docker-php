@@ -10,6 +10,12 @@ Para Crear el contenedor de Docker
 docker build -t tu-cuenta/tu-tag .
 ```
 
+Para utilizar la version con `Apache`:
+
+```bash
+docker build -t tu-cuenta/tu-tag -f Dockerfile.apache .
+```
+
 Para correr el contenedor, vamos a mapear el puerto `80` que la aplicación expone al arrancar por `4000` en nuestro ordenador. 
 
 ```bash
